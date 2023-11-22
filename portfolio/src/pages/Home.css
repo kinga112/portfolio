@@ -1,0 +1,151 @@
+div{
+    /* position: flex; */
+    font-family: Nunito;
+    /* justify-content: center; */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-x: hidden;
+}
+
+#glass{
+    position: relative;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 300px;
+    width: 50%;
+    background: rgba(255, 255, 255, 0.025);
+    border-radius: 10px;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(204, 137, 137, 0.3);
+    z-index: 5;
+}
+
+h1{
+    padding: 50px;
+    text-align: center;
+    /* font-size: 3.5rem; */
+    font-size: 3vw;
+    z-index: 6;
+}
+
+/* #grid-container { */
+    /* position: absolute; */
+    /* display: grid; */
+    /* display: flex; */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* grid-gap: 10px; */
+    /* color: #000; */
+/* } */
+
+
+#personal_images {
+    /* randomNumber: */
+    position: absolute;
+    max-width: 200px;
+    height: auto;
+    border-radius: 75px;
+    z-index: 4;
+}
+
+#personal_images:hover {
+    transform: scale(1.25);
+    z-index: 999 !important;
+    border-radius: 35px;
+}
+
+.img1{
+    /* position: absolute; */
+    top: 100px;
+    right: 80%;
+    transition: all 0.3s ease;
+    transform: translate(0, 0) scale(0.75);
+}
+
+.img2{
+    /* position: absolute; */
+    top: 90px;
+    right: 25%;
+    transition: all 0.3s ease;
+    transform: translate(0, 0) scale(0.75);
+}
+.img3{
+    top: 350px;
+    right: 75%;
+    transition: all 0.3s ease;
+    transform: translate(0, 0) scale(0.75);
+}
+.img4{
+    top: 325px;
+    left: 71%;
+    transition: all 0.3s ease;
+    transform: scale(0.75);
+}
+
+.img5{
+    top: 425px;
+    right: 50%;
+    transition: all 0.3s ease;
+    transform: scale(0.75);
+}
+
+.img6{
+    top: 100px;
+    left: 42%;
+    transition: all 0.3s ease;
+    transform: scale(0.75);
+}
+.img7{
+    top: 350px;
+    left: 60%;
+    transition: all 0.3s ease;
+    transform: scale(0.75);
+}
+.img8{
+    top: 125px;
+    right: 8%;
+    transition: all 0.3s ease;
+    transform: scale(0.75);
+}
+.img9{
+    top: 350px;
+    left: 4%;
+    transition: all 0.3s ease;
+    transform: scale(0.75);
+}
+
+#bottomInfo{
+    position: absolute;
+    z-index: 2;
+    background-color: #dddee5;
+}
+
+#bottomInfoLeft{
+    position: absolute;
+    color: black;
+    font-size: 22px;
+    bottom: 25px;
+    left: 25px;
+}
+
+#bottomInfoRight{
+    position: absolute;
+    color: black;
+    bottom: 25px;
+    right: 35px;
+}
+
+#logo{
+    height: 50px;
+    width: 50px;
+}
+
+code{
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    background-color: #7c859438;
+}
