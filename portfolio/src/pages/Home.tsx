@@ -9,9 +9,7 @@ import image7 from '../assets/personal_image7.png'
 import image8 from '../assets/personal_image8.png'
 import image9 from '../assets/personal_image9.png'
 import linkedInLogo from '../assets/linkedIn_logo.png'
-// import mountains from '../assets/breckenridge.png'
 import mountains from '../assets/mountains.png'
-// import mountains from '../assets/mountains.svg';
 import './Home.css'
 
 
@@ -42,6 +40,22 @@ function Home() {
         </div>
       </div>
 
+      <div id='middleInfo'>
+        <div id='middleInfoText'>
+          Hello!
+          <br></br>
+          This portfolio is a testament to my journey — 
+          <br></br>
+          a canvas where the tracks of my skiing adventures converge with the 
+          lines of code that define my craftsmanship. 
+          <br></br>
+          Join me on this odyssey of creation, where every project is a peak conquered, 
+          and every line of code is a story waiting to be told. 
+          <br></br>
+          Welcome to a world where software development meets the art of exploration.
+        </div>
+      </div>
+
       <div id='bottomInfo'>
         <div id='bottomInfoLeft'>
           Email Me : <code>kinga112@yahoo.com</code>
@@ -51,7 +65,7 @@ function Home() {
             <img id='logo' src={linkedInLogo}></img>
           </a>
         </div>
-        <img id='mountains' src={mountains}></img>
+        <img src={mountains}></img>
       </div>
       
     </>

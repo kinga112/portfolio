@@ -20,7 +20,7 @@ div{
     box-shadow: 0 7px 30px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
-    border: 1px solid rgba(204, 137, 137, 0.3);
+    border: 1px solid rgba(206, 206, 206, 0.3);
     z-index: 5;
 }
 
@@ -117,6 +117,21 @@ h1{
     transform: scale(0.75);
 }
 
+#middleInfo{
+    justify-content: center;
+    padding: 50px;
+}
+
+#middleInfoText{
+    text-align: center;
+    font-size: 2vw;
+    margin: 0px 50px;
+    padding: 50px 10%;
+    border-radius: 15px;
+    background-color: #00507059;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.25);
+}
+
 #bottomInfo{
     position: absolute;
     z-index: 2;
@@ -126,15 +141,15 @@ h1{
 #bottomInfoLeft{
     position: absolute;
     color: black;
-    font-size: 22px;
+    font-size: 1.5rem;
     bottom: 25px;
     left: 25px;
 }
 
 #bottomInfoRight{
     position: absolute;
-    color: black;
     bottom: 25px;
+    /* left: 90dvw; FOR MOBILE */ 
     right: 35px;
 }
 
