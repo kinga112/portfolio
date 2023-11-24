@@ -1,0 +1,14 @@
+#main{
+    justify-content: center;
+    padding: 50px;
+}
+
+#main-text{
+    text-align: center;
+    font-size: 2vw;
+    margin: 0px 50px;
+    padding: 50px 10%;
+    border-radius: 15px;
+    background-color: #00507059;
+    box-shadow: 0 7px 30px rgba(0, 0, 0, 0.25);
+}

@@ -133,6 +133,8 @@ h1{
 }
 
 #bottomInfo{
+    max-width: 100%;
+    height: auto;
     position: absolute;
     z-index: 2;
     background-color: #dddee5;
@@ -149,7 +151,6 @@ h1{
 #bottomInfoRight{
     position: absolute;
     bottom: 25px;
-    /* left: 90dvw; FOR MOBILE */ 
     right: 35px;
 }
 

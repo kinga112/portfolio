@@ -11,6 +11,7 @@ function NavBar() {
         </Link>
         <div>
           <ul id='navbar'>
+            <li><Link to="/projects">Projects</Link></li>
             <li><Link to="/about">About</Link></li>
           </ul>
         </div>
