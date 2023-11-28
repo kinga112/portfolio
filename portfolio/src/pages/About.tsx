@@ -8,7 +8,7 @@ function About() {
         <h1>
           About Alden
         </h1>
-        <div id='main-text'>
+        {/* <div id='main-text'>
           My story begins 25 years ago. A creative boy who loves to build legos and play in the dirt.
           I love the fresh salty air by the beach and the brisk chills of the north. My curious mind 
           taught me to explore, and think critically.
@@ -20,11 +20,11 @@ function About() {
         </div>
         <h2>
           Skills
-        </h2>
+        </h2> */}
         <div id='grid-wrapper'>
           <div id="one">One</div>
           <div id="two">Two</div>
-          <div id="three">Three</div>
+          {/* <div id="three">Three</div> */}
           <div id="four">Four</div>
           <div id="five">Five</div>
           <div id="six">Six</div>

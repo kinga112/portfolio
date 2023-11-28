@@ -29,7 +29,10 @@ nav{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: 800;
-    color: #dddee5
+    color: #dddee5;
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.6;
 }
 
 #navbar li a:hover{
