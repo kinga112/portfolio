@@ -178,6 +178,10 @@ code{
         left: 25px;
     }
 
+    #bottom-image{
+        max-width: 700px;
+    }
+
     #logo{
         height: 35px;
         width: 35px;
