@@ -13,8 +13,9 @@ div{
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
+    /* padding: auto; */
     margin-bottom: 300px;
-    width: 50%;
+    width: max(50%, 300px);
     background: rgba(255, 255, 255, 0.025);
     border-radius: 10px;
     box-shadow: 0 7px 30px rgba(0, 0, 0, 0.25);
@@ -124,8 +125,8 @@ h1{
 
 #middle-info-text{
     text-align: center;
-    font-size: 2vw;
-    /* font-size: min(max(25px, 3vw), 30px); */
+    /* font-size: 2vw; */
+    font-size: max(20px, 1.5vw);
     margin: 0px 50px;
     padding: 50px 10%;
     border-radius: 15px;
@@ -182,5 +183,18 @@ code{
     #logo{
         height: 35px;
         width: 35px;
+    }
+
+    #middle-info{
+        padding: 0px;
+        margin: 0px -25px;
+    }
+
+    #glass{
+        padding: 0px;
+    }
+
+    #personal-images {
+        max-width: 175px;
     }
 }
