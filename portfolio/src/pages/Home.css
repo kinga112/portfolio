@@ -1,11 +1,13 @@
 div{
-    /* position: flex; */
     font-family: Nunito;
-    /* justify-content: center; */
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     overflow-x: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #glass{
