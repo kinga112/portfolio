@@ -127,6 +127,7 @@ h1{
     position: absolute;
     z-index: 2;
     background-color: #dddee5;
+    overflow-x: hidden;
 }
 
 #bottom-image{
