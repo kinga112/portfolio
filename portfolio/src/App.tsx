@@ -7,6 +7,8 @@ import NavBar from './components/NavBar'
 function App() {
   return (
     <>
+      <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
       <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
       </style>
