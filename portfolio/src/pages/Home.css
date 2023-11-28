@@ -11,9 +11,8 @@ div{
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    /* padding: auto; */
     margin-bottom: 300px;
-    width: max(50%, 300px);
+    width: max(50%, 500px);
     background: rgba(255, 255, 255, 0.025);
     border-radius: 10px;
     box-shadow: 0 7px 30px rgba(0, 0, 0, 0.25);
@@ -27,22 +26,11 @@ h1{
     padding: 50px;
     text-align: center;
     /* font-size: 3.5rem; */
-    font-size: 3vw;
+    font-size: max(3vw, 30px);
     z-index: 6;
 }
 
-/* #grid-container { */
-    /* position: absolute; */
-    /* display: grid; */
-    /* display: flex; */
-    /* grid-template-columns: repeat(5, 1fr); */
-    /* grid-gap: 10px; */
-    /* color: #000; */
-/* } */
-
-
 #personal-images {
-    /* randomNumber: */
     position: absolute;
     max-width: 200px;
     height: auto;
@@ -194,9 +182,14 @@ code{
 
     #glass{
         padding: 0px;
+        width: 80%;
     }
 
     #personal-images {
         max-width: 175px;
+    }
+
+    h1{
+        font-size: 22px;
     }
 }
