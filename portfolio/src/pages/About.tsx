@@ -18,6 +18,17 @@ function About() {
           Which is why I fell in love with it! I am happy to have started my journey early
           taking a AP computer science course at MIT, which mostly taught Java
         </div>
+        <h2>
+          Skills
+        </h2>
+        <div id='grid-wrapper'>
+          <div id="one">One</div>
+          <div id="two">Two</div>
+          <div id="three">Three</div>
+          <div id="four">Four</div>
+          <div id="five">Five</div>
+          <div id="six">Six</div>
+        </div>
       </div>
     </>
   )

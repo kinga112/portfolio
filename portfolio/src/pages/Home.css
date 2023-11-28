@@ -42,7 +42,7 @@ h1{
 /* } */
 
 
-#personal_images {
+#personal-images {
     /* randomNumber: */
     position: absolute;
     max-width: 200px;
@@ -51,7 +51,7 @@ h1{
     z-index: 4;
 }
 
-#personal_images:hover {
+#personal-images:hover {
     transform: scale(1.25);
     z-index: 999 !important;
     border-radius: 35px;
@@ -117,14 +117,15 @@ h1{
     transform: scale(0.75);
 }
 
-#middleInfo{
+#middle-info{
     justify-content: center;
     padding: 50px;
 }
 
-#middleInfoText{
+#middle-info-text{
     text-align: center;
     font-size: 2vw;
+    /* font-size: min(max(25px, 3vw), 30px); */
     margin: 0px 50px;
     padding: 50px 10%;
     border-radius: 15px;
@@ -132,23 +133,29 @@ h1{
     box-shadow: 0 7px 30px rgba(0, 0, 0, 0.25);
 }
 
-#bottomInfo{
+#bottom-info{
     max-width: 100%;
+    min-width: 600px;
     height: auto;
     position: absolute;
     z-index: 2;
     background-color: #dddee5;
 }
 
-#bottomInfoLeft{
+#bottom-image{
+    max-width: 100%;
+}
+
+#bottom-info-left{
     position: absolute;
     color: black;
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
+    font-size: max(1.5vw, 15px);
     bottom: 25px;
     left: 25px;
 }
 
-#bottomInfoRight{
+#bottom-info-right{
     position: absolute;
     bottom: 25px;
     right: 35px;
@@ -164,4 +171,16 @@ code{
     -ms-user-select: text;
     user-select: text;
     background-color: #7c859438;
+}
+
+@media (max-width: 700px) {
+    #bottom-info-right{
+        bottom: 45px;
+        left: 25px;
+    }
+
+    #logo{
+        height: 35px;
+        width: 35px;
+    }
 }

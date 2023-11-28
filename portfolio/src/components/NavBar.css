@@ -27,7 +27,8 @@ nav{
 
 #navbar li a{
     text-decoration: none;
-    font-size: 1.3rem;
+    /* font-size: 2.5rem; */
+    font-size: 1.5vw;
     font-weight: 800;
     color: #dddee5
 }
@@ -46,3 +47,11 @@ nav{
     transform: translate(0, 0) scale(115%);
     filter: invert(54%) sepia(14%) saturate(326%) hue-rotate(179deg) brightness(93%) contrast(99%);
 }
+
+@media (min-width: 768px)
+ {
+    #navbar li a{
+        font-size: 1vw; 
+        font-size: 1.5rem;
+    }
+ }
