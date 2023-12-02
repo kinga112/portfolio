@@ -14,14 +14,14 @@ import postgre from '../assets/postgre_logo.png'
 import graphql from '../assets/graphql_logo.png'
 import group_photo from '../assets/roblealto_group_photo.jpg'
 import lego from '../assets/lego_logo.png'
-import lightsabers from '../assets/lightsabers.png'
+// import lightsabers from '../assets/lightsabers.png'
 import skis from '../assets/skis.png'
-import batman from '../assets/batman.png'
+// import batman from '../assets/batman.png'
 import videogames from '../assets/videogames.png'
 import flstudio from '../assets/flstudio_logo.png'
 import fsociety from '../assets/fsociety2.gif'
 import redsox from '../assets/redsox_logo.png'
-import batsignal from '../assets/batsignal.webp'
+// import batsignal from '../assets/batsignal.webp'
 import Project1 from '../components/Project1'
 import Project2 from '../components/Project2'
 import Project3 from '../components/Project3'
@@ -36,7 +36,7 @@ export const batsignalState = hookstate('hidden');
 
 function About() {
   const glitchState = useHookstate(globalState);
-  const batState = useHookstate(batsignalState);
+  // const batState = useHookstate(batsignalState);
 
   const startGlitch: MouseEventHandler<HTMLDivElement> = () => {
     globalState.set('glitch layers')
@@ -45,15 +45,15 @@ function About() {
   const endGlitch: MouseEventHandler<HTMLDivElement> = () => {
     globalState.set('')
   };
-  const showBatSignal: MouseEventHandler<HTMLDivElement> = () => {
-    console.log('bat bat batman')
-    batState.set('batsignal')
-  };
+  // const showBatSignal: MouseEventHandler<HTMLDivElement> = () => {
+  //   console.log('bat bat batman')
+  //   batState.set('batsignal')
+  // };
 
-  const hideBatSignal: MouseEventHandler<HTMLDivElement> = () => {
-    console.log('hide it')
-    batState.set('hidden')
-  };
+  // const hideBatSignal: MouseEventHandler<HTMLDivElement> = () => {
+  //   console.log('hide it')
+  //   batState.set('hidden')
+  // };
 
   return (
     <>
@@ -144,9 +144,9 @@ function About() {
             </div>
           </div>
         </div>
-        <div className={batState.get()}>
+        {/* <div className={batState.get()}>
           <img src={batsignal}></img>
-        </div>
+        </div> */}
       </div>
     </>
   )
