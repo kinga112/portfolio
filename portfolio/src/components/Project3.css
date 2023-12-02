@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Teko:wght@500&display=swap');
+#project3 {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #dddee5;
+    border-radius: 15px;
+    padding: 15px;
+    overflow: hidden;
+  }
+  
+  #project3:hover #project3-overlay {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  #heading-2 {
+    text-align: center;
+    color: black;
+    font-weight: 700;
+    font-size: 40pt;
+    margin-top: 10px;
+    margin-bottom: auto;
+    font-family: 'Nunito';
+  }
+  
+  #project3-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: #15253f;
+    transition: transform 300ms;
+    transform: translate3d(0, calc(100% - 5rem), 0);
+  }
+  
+  #top-overlay-text-2 {
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    padding: 0rem 1rem 1rem 1rem;
+    background-color: #15253f;
+  }
+
+  .top-overlay-image {
+    padding: 25px 10px;
+  }
+  
+  #bot-overlay-text {
+    margin-top: -20px;
+    flex-grow: 1;
+    padding: 1rem;
+    background-color: #15253f;
+    overflow: hidden;
+  }
+  
+  #link-2 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #FAF9F6;
+    font-weight: 700;
+  }
+  
+  a {
+    text-decoration: none;
+  }

@@ -1,0 +1,59 @@
+#project1{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  grid-column: 1;
+  grid-row: 1;
+  background-color: #dddee5;
+  border-radius: 15px;
+  padding: 15px;
+  overflow: hidden;
+}
+
+#project1:hover #project1-overlay{
+  transform: translate3d(0, 0, 0);
+}
+
+#project1-images{
+  height: 100px;
+  width: auto;
+}
+
+#project1-overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  border-radius: 2px;
+  background-color: #15253f;
+  transition: transform 300ms;
+  transform: translate3d(0, calc(100% - 5rem), 0);
+}
+
+h3{
+  display: block;
+  padding: 0rem 1rem 1rem 1rem;
+  background-color: #15253f;
+}
+
+#project1-text {
+  margin-top: -20px;
+  flex-grow: 1;
+  padding: 1rem;
+  background-color: #15253f;
+  overflow: hidden;
+}
+
+#medium-logo{
+  background-color: #dddee5;
+  border-radius: 5px;
+  height: 35px;
+  width: auto;
+  margin-top: 10px;
+}

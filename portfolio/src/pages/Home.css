@@ -103,6 +103,12 @@ h1{
     transition: all 0.3s ease;
     transform: scale(0.75);
 }
+.img10{
+    top: 140px;
+    left: 28%;
+    transition: all 0.3s ease;
+    transform: scale(0.75);
+}
 
 #middle-info{
     justify-content: center;

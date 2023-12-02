@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home'
 import About from './pages/About'
-import Projects from './pages/Projects'
 import NavBar from './components/NavBar'
+import Mission from "./pages/Mission";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
           <Route path="/" element={<NavBar/>}>
             <Route index element={<Home/>} />
             <Route path="about" element={<About/>} />
-            <Route path="projects" element={<Projects/>} />
+            <Route path="mission" element={<Mission/>} />
             {/* <Route path="contact" element={<Contact />} /> */}
             {/* <Route path="*" element={<NoPage />} /> */}
           </Route>

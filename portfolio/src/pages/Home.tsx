@@ -8,6 +8,7 @@ import image6 from '../assets/personal_image6_jpeg.jpg'
 import image7 from '../assets/personal_image7_jpeg.jpg'
 import image8 from '../assets/personal_image8_jpeg.jpg'
 import image9 from '../assets/personal_image9_jpeg.jpg'
+import image10 from '../assets/personal_image10.jpg'
 import linkedInLogo from '../assets/linkedIn_logo.png'
 import mountains from '../assets/mountains.png'
 import './Home.css'
@@ -34,7 +35,7 @@ function Home() {
         <img id='personal-images' className='img7' src={image7}></img>
         <img id='personal-images' className='img8' src={image8}></img>
         <img id='personal-images' className='img9' src={image9}></img>
-
+        <img id='personal-images' className='img10' src={image10}></img>
         <div id='glass'>
           <h1>I am {typeEffect}<Cursor/></h1>
         </div>
