@@ -23,7 +23,8 @@
   padding: 10px;
   border-radius: 5px;
   font-weight: 700;
-  font-size: 25pt;
+  font-size: min(5dvw, 25pt);
+  /* font-size: 1.75dvw; */
   margin-top: 25px;
   margin-bottom: auto;
   font-family: 'Roboto', sans-serif;
@@ -46,11 +47,13 @@
 #top-overlay-text {
   /* padding-top: 50px; */
   margin: 20px 0px;
-  font-size: 22px;
+  font-size: 20px;
+  /* font-size: min(1.75dvw, 22px); */
   font-weight: 600;
   display: block;
   padding: 0rem 1rem 1rem 1rem;
   background-color: #15253f;
+  overflow: hidden;
 }
 
 #bot-overlay-text {

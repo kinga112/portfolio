@@ -11,11 +11,9 @@ function Project3(){
   return(
       <>
         <div id='project3'>
-          <img id='logo' className='top-overlay-image' src={queue}></img>
+          <img className='top-overlay-image' src={queue}></img>
           <div id='heading-2'>
-            <span>
               Q
-            </span>
           </div>
           <div id='project3-overlay'>
             <div id='top-overlay-text-2' aria-hidden="true" className={state.get()} data-text="Shop Smarter, Wait Less!">

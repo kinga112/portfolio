@@ -18,7 +18,8 @@
 }
 
 #project1-images{
-  height: 100px;
+  /* height: 100px; */
+  height: 5dvw;
   width: auto;
 }
 
@@ -38,8 +39,9 @@
 
 h3{
   display: block;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 0rem 1em 1rem 1rem;
   background-color: #15253f;
+  font-size: min(3dvw, 20px);
 }
 
 #project1-text {

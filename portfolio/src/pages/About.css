@@ -1,11 +1,17 @@
 #main{
-    justify-content: center;
-    padding: 50px;
+    /* justify-content: center; */
+    /* padding: 50px; */
+    padding: 0px 25px 0px 25px;
+    display: table-cell;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* white-space: nowrap; */
 }
 
 #main-text{
     text-align: center;
-    font-size: 2vw;
+    /* font-size: 2vw; */
+    /* font-size: 20pt; */
     margin: 10px 50px;
     padding: 50px 10%;
     border-radius: 15px;
@@ -15,22 +21,25 @@
 
 #grid-wrapper{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5,1fr);
+    /* grid-template-columns: fit-content(300px) fit-content(300px) 1fr; */
     gap: 20px;
     padding: 25px;
-    grid-auto-rows: minmax(200px, auto);
-    margin: 0px 25px;
+    /* grid-auto-rows: minmax(auto, 100px); */
+    /* margin: 0px 25px; */
 }
 
-#one {
+#my-story {
     grid-column: 1/3;
     grid-row: 1/5;
     background-color: #00507059;
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    /* background-color: black; */
     /* text-align: center; */
     padding: 25px 7%;
     font-size: 1.5vw;
+    /* font-size: 30pt; */
 }
 #projects {
     grid-column: 3 / 5;
@@ -38,7 +47,19 @@
     background-color: #00507059;
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    width: 40dvw;
+    height: auto;
+    /* white-space: nowrap; */
 }
+
+#projects-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 15px;
+    grid-auto-rows: minmax(200px, auto);
+}
+
 #three {
     grid-column: 3;
     grid-row: 2 / 5;
@@ -46,12 +67,14 @@
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
-#four {
+#hobbys {
     grid-column: 3/4;
     grid-row: 1;
     background-color: #00507059;
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
+    white-space: nowrap;
+    padding-left: 2dvw;
 }
 #mission {
     grid-column: 3/5;
@@ -72,8 +95,10 @@
 #mission-text{
     grid-column: 1;
     grid-row: 1;
-    font-size: 35pt;
-    padding-top: 25px;
+    font-size: min(3dvw, 35pt);
+    /* padding-top: 25px; */
+    margin-top: auto;
+    margin-bottom: auto;
     font-weight: 600;
     overflow-y: hidden;
 }
@@ -98,30 +123,39 @@
 #mission-photo{
     grid-column: 2;
     grid-row: 1;
-    height: 200px;
+    height: 15dvw;
     width: auto;
     border-radius: 15px;
 }
 
-#six {
+#timeline {
     grid-column: 5;
     grid-row: 2/5;
     background-color: #00507059;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.041);
     border-radius: 15px; 
 }
-#seven {
+#skills {
     grid-column: 4/6;
     grid-row: 1;
+    padding-left: 2.5dvw;
+    /* padding-right: auto; */
     background-color: #00507059;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.041);
-    border-radius: 15px;    
+    border-radius: 15px;   
+    white-space: nowrap;
+    /* margin-right: 0; */
+    /* overflow-x: auto; */
 }
 
 #logos{
-    width: 75px;
-    height: 75px;
-    padding: 15px;
+    /* width: 75px; */
+    /* height: 75px; */
+    /* padding: 15px; */
+    width: 3.75dvw;
+    height: 3.75dvw;
+    padding: 0.75dvw;
+    /* padding: 20px 20px 20px 20px; */
     border-radius: 25px;
     transition: transform 0.3s ease-in-out;
 }
@@ -172,19 +206,10 @@
         /* -webkit-transform: rotate(-50deg); */
         rotate: 0deg;
     }
-
 }
 
 #logos:hover{
     transform: scale(0.9) rotate(10deg);
-}
-
-#projects-grid{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 15px;
-    grid-auto-rows: minmax(200px, auto);
 }
 
 #project2{
@@ -208,6 +233,128 @@
     border-radius: 15px;
 }
 
-/* a{
-    text-decoration: none !important;
-} */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+
+/* #slider{ */
+
+/* } */
+
+@media (max-width: 1200px) {
+    #logos{
+        height: 75px;
+        width: 75px;
+        padding: 10px;
+    }
+
+    #slide{
+        display: inline-block;
+        overflow: visible;
+        animation: 15s slide infinite linear;
+    }
+
+    #grid-wrapper{
+        display: grid;
+        /* grid-template-columns: 85vw; */
+        /* justify-content: center; */
+        /* grid-template-columns: fit-content(300px) fit-content(300px) 1fr; */
+        gap: 10px;
+        /* padding: 25px; */
+        /* grid-auto-rows: minmax(200px, 200px); */
+        /* margin: 0px 25px; */
+        /* background-color: black; */
+    }
+    #skills {
+        grid-column: 1;
+        grid-row: 1;
+        /* white-space: wrap; */
+        /* height: 100px; */
+        overflow: hidden;
+        /* background-color: #00507059; */
+        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.041); */
+        /* border-radius: 15px;    */
+        /* white-space-collapse: collapse; */
+    }
+    #projects {
+        grid-column: 1;
+        grid-row: 2;
+        background-color: #00507059;
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        width: 80dvw;
+        /* width: 40dvw; */
+        /* height: auto; */
+        /* white-space: nowrap; */
+    }
+    #my-story {
+        grid-column: 1;
+        grid-row: 3;
+        background-color: #00507059;
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        /* background-color: black; */
+        /* text-align: center; */
+        padding: 25px 7%;
+        font-size: 16pt;
+    }
+    #hobbys {
+        grid-column: 1;
+        grid-row: 4;
+        padding-left: 2.5dvw;
+        background-color: #00507059;
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        height: 100px;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    #mission {
+        grid-column: 1;
+        grid-row: 5;
+        background-color: #00507059;
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+    #timeline {
+        grid-column: 1;
+        grid-row: 6;
+        background-color: #00507059;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.041);
+        border-radius: 15px; 
+    }
+
+    /* @keyframes scroll {
+        0%{
+            transform: translateX(0);
+        }
+        100%{
+            transform: translateX(calc(-75px * 12));
+        }
+    }
+    .slider{
+        margin: auto;
+        overflow: hidden;
+        position: relative;
+        width: auto;
+        background-color: black;
+    }
+    .slider .slide-track{
+        animation: scroll 10s linear infinite;
+        width: calc(75px * 12);
+        background-color: red;
+        overflow: hidden;
+    }
+    .slider .slide{
+        height: 75px;
+        width: 100px;
+        background-color: red;
+        overflow: hidden;
+    } */
+}

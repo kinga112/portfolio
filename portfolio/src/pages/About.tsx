@@ -30,9 +30,11 @@ import Timeline from '../components/Timeline'
 import { MouseEventHandler } from 'react'
 import { hookstate, useHookstate } from '@hookstate/core';
 import { Link } from 'react-router-dom'
+import useWindowSize from '../hooks/useWindowSize'
+
 
 export const globalState = hookstate('');
-export const batsignalState = hookstate('hidden');
+// export const batsignalState = hookstate('hidden');
 
 function About() {
   const glitchState = useHookstate(globalState);
@@ -45,6 +47,8 @@ function About() {
   const endGlitch: MouseEventHandler<HTMLDivElement> = () => {
     globalState.set('')
   };
+
+  const size = useWindowSize();
   // const showBatSignal: MouseEventHandler<HTMLDivElement> = () => {
   //   console.log('bat bat batman')
   //   batState.set('batsignal')
@@ -59,7 +63,7 @@ function About() {
     <>
       <div id='main'>
         <div id='grid-wrapper'>
-          <div id="one" className={glitchState.get()} data-text="My story begins 25 years ago. A creative boy who loves to 
+          <div id="my-story" className={glitchState.get()} data-text="My story begins 25 years ago. A creative boy who loves to 
             build legos and play in the dirt. I love the fresh salty air by the beach and the brisk 
             chills of the north. My curious mind taught me to explore, and think critically.&emsp;&emsp;&emsp;&emsp;&emsp;
             My love of Boston brought me to Wentworth Institute of Techology, where I received my Bachelors
@@ -86,6 +90,55 @@ function About() {
               now start a new journey to find something fresh!
             </span>
           </div>
+          <div id="skills">
+          {size.width < 1200 &&
+            <div id='slide'>
+              <img id='logos' src={python}></img>
+              <img id='logos' src={react}></img>
+              <img id='logos' src={vue}></img>
+              <img id='logos' src={flutter}></img>
+              <img id='logos' src={javascript}></img>
+              <img id='logos' src={typescript}></img>
+              <img id='logos' className='batman' src={gcp}></img>
+              <img id='logos' src={nginx}></img>
+              <img id='logos' src={vercel}></img>
+              <img id='logos' src={aws}></img>
+              <img id='logos' src={postgre}></img>
+              <img id='logos' src={graphql}></img>
+            </div>
+            }
+            {size.width < 1200 &&
+            <div id='slide'>
+              <img id='logos' src={python}></img>
+              <img id='logos' src={react}></img>
+              <img id='logos' src={vue}></img>
+              <img id='logos' src={flutter}></img>
+              <img id='logos' src={javascript}></img>
+              <img id='logos' src={typescript}></img>
+              <img id='logos' className='batman' src={gcp}></img>
+              <img id='logos' src={nginx}></img>
+              <img id='logos' src={vercel}></img>
+              <img id='logos' src={aws}></img>
+              <img id='logos' src={postgre}></img>
+              <img id='logos' src={graphql}></img>
+            </div>
+            }
+                  
+            {size.width > 1200 && <img id='logos' src={python}></img>}
+            {size.width > 1200 &&<img id='logos' src={react}></img>}
+            {size.width > 1200 &&<img id='logos' src={vue}></img>}
+            {size.width > 1200 &&<img id='logos' src={flutter}></img>} 
+            {size.width > 1200 &&<img id='logos' src={javascript}></img>}
+            {size.width > 1200 &&<img id='logos' src={typescript}></img>}
+            {size.width > 1200 && <br/> }
+            {size.width > 1200 &&<img id='logos' className='batman' src={gcp}></img>}
+            {size.width > 1200 &&<img id='logos' src={nginx}></img>}
+            {size.width > 1200 &&<img id='logos' src={vercel}></img>}
+            {size.width > 1200 &&<img id='logos' src={aws}></img>}
+            {size.width > 1200 &&<img id='logos' src={postgre}></img>}
+            {size.width > 1200 &&<img id='logos' src={graphql}></img>}
+                  
+          </div>
           <div id="projects">
             <div id='projects-grid'>
               <Project1/>
@@ -94,50 +147,36 @@ function About() {
               <Project4/>
             </div>
           </div>
-          <div id="four">
-          <img id='logos' src={redsox}></img>
+          <div id="hobbys">
+            <img id='logos' src={redsox}></img>
             <img id='logos' src={lego}></img>
             <img id='logos' src={flstudio}></img>
-            {/* <img id='logos' src={lightsabers}></img> */}
-            {/* <img id='logos' className='batman' src={batman} onMouseEnter={showBatSignal} onMouseLeave={hideBatSignal}></img> */}
+            {size.width > 1200 && <br/> }
             <a href='https://mrrobot.fandom.com/wiki/Fsociety'>
               <img id='logos' src={fsociety} onMouseEnter={startGlitch} onMouseLeave={endGlitch}></img>
             </a>
             <img id='logos' src={videogames}></img>
             <img id='logos' src={skis}></img>
           </div>
-          <div id="six">
+          <div id="timeline">
             <Timeline/>
-          </div>
-          <div id="seven">
-            <img id='logos' src={python}></img>
-            <img id='logos' src={react}></img>
-            <img id='logos' src={vue}></img>
-            <img id='logos' src={flutter}></img>
-            <img id='logos' src={javascript}></img>
-            <img id='logos' src={typescript}></img>
-            <img id='logos' className='batman' src={gcp}></img>
-            <img id='logos' src={nginx}></img>
-            <img id='logos' src={vercel}></img>
-            <img id='logos' src={aws}></img>
-            <img id='logos' src={postgre}></img>
-            <img id='logos' src={graphql}></img>
-            {/* <img id='logos' src={lego}></img>
-            <img id='logos' src={lightsabers}></img>
-            <img id='logos' className='batman' src={batman} onMouseEnter={showBatSignal} onMouseLeave={hideBatSignal}></img>
-            <a href='https://mrrobot.fandom.com/wiki/Fsociety'>
-              <img id='logos' src={fsociety} onMouseEnter={startGlitch} onMouseLeave={endGlitch}></img>
-            </a>
-            <img id='logos' src={videogames}></img>
-            <img id='logos' src={skis}></img>
-            <img id='logos' src={flstudio}></img>
-            <img id='logos' src={redsox}></img> */}
           </div>
           <div id="mission">
             <div id='mission-grid'>
               <div id='mission-text'>
                     <Link to="/mission" id='fancy-link' className={glitchState.get()} data-text="Making an impact around the world">
-                      <span>Making an impact around the world</span>
+                      {size.width < 1200 && 
+                      <span>
+                        Making an impact around the world
+                      </span>
+                      }
+                      {size.width > 1200 && 
+                      <span>
+                        Making an impact
+                        <br/>
+                        around the world
+                      </span>
+                      }
                     </Link>
               </div>
               <img id='mission-photo' src={group_photo}></img>

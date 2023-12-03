@@ -22,7 +22,8 @@
     text-align: center;
     color: black;
     font-weight: 700;
-    font-size: 40pt;
+    /* font-size: 40pt; */
+    font-size: min(5dvw, 40pt);
     margin-top: 10px;
     margin-bottom: auto;
     font-family: 'Nunito';
@@ -48,10 +49,12 @@
     display: block;
     padding: 0rem 1rem 1rem 1rem;
     background-color: #15253f;
+    overflow: hidden;
   }
 
   .top-overlay-image {
     padding: 25px 10px;
+    height: min(5dvw, 50px);
   }
   
   #bot-overlay-text {

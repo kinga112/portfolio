@@ -1,12 +1,21 @@
 .content h3 {
-	font-size: 20pt;
-  margin: 0px 15px;
+	// font-size: 20pt;
+  font-size: 1.25vw;
+  margin-left: 15px;
+  margin-top: 0px;
+  margin-right: 0px;
   background-color: transparent;
+  text-overflow: ellipsis;
 }
 
 p {
+  font-size: 1vw;
   margin-bottom: 35px;
-  padding: 0 2em 0em 2em;
+  margin-top: 0px;
+  margin-left: 15px;
+  margin-right: 0px;
+  width: max(min 75px, 8dvw);
+  // text-wrap: wrap;
 }
 
 .l-contained {
@@ -16,7 +25,7 @@ p {
 
 .timeline-list {
   margin-top: 35px;
-  margin-left: 15px;
+  margin-left: 10px;
 	padding-bottom: 10px;
 	position: relative;
  
