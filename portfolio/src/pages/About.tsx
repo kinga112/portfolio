@@ -82,7 +82,7 @@ function About() {
             </span>
           </div>
           <div id="skills">
-          {size.width < 1200 &&
+          {size.width <= 1200 &&
             <div id='slide'>
               <img id='logos' src={python}></img>
               <img id='logos' src={react}></img>
@@ -98,7 +98,7 @@ function About() {
               <img id='logos' src={graphql}></img>
             </div>
             }
-            {size.width < 1200 &&
+            {size.width <= 1200 &&
             <div id='slide'>
               <img id='logos' src={python}></img>
               <img id='logos' src={react}></img>
@@ -151,7 +151,7 @@ function About() {
                 <img id='logos' src={skis}></img>
               </div>
             }
-            {size.width < 1200 &&
+            {size.width <= 1200 &&
             <div id='slide'>
               <img id='logos' src={redsox}></img>
               <img id='logos' src={lego}></img>
@@ -165,7 +165,7 @@ function About() {
               <img id='logos' src={lightsabers}></img>
             </div>
             }
-            {size.width < 1200 &&
+            {size.width <= 1200 &&
             <div id='slide'>
               <img id='logos' src={redsox}></img>
               <img id='logos' src={lego}></img>
@@ -187,7 +187,7 @@ function About() {
             <div id='mission-grid'>
               <div id='mission-text'>
                     <Link to="/mission" id='fancy-link' className={glitchState.get()} data-text="Making an impact around the world">
-                      {size.width < 1200 && 
+                      {size.width <= 1200 && 
                       <span>
                         Making an impact around the world
                       </span>
