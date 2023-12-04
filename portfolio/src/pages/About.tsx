@@ -83,7 +83,7 @@ function About() {
           </div>
           <div id="skills">
           {size.width <= 1200 &&
-            <div id='slide'>
+            <div id='slide-skills'>
               <img id='logos' src={python}></img>
               <img id='logos' src={react}></img>
               <img id='logos' src={vue}></img>
@@ -99,7 +99,7 @@ function About() {
             </div>
             }
             {size.width <= 1200 &&
-            <div id='slide'>
+            <div id='slide-skills'>
               <img id='logos' src={python}></img>
               <img id='logos' src={react}></img>
               <img id='logos' src={vue}></img>
@@ -138,7 +138,7 @@ function About() {
               <Project4/>
             </div>
           </div>
-          <div id="hobbys">
+          <div id="hobbies">
             {size.width > 1200 && <div>
                 <img id='logos' src={redsox}></img>
                 <img id='logos' src={lego}></img>
@@ -152,7 +152,7 @@ function About() {
               </div>
             }
             {size.width <= 1200 &&
-            <div id='slide'>
+            <div id='slide-hobbies'>
               <img id='logos' src={redsox}></img>
               <img id='logos' src={lego}></img>
               <img id='logos' src={flstudio}></img>
@@ -166,7 +166,7 @@ function About() {
             </div>
             }
             {size.width <= 1200 &&
-            <div id='slide'>
+            <div id='slide-hobbies'>
               <img id='logos' src={redsox}></img>
               <img id='logos' src={lego}></img>
               <img id='logos' src={flstudio}></img>

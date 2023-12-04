@@ -53,7 +53,7 @@
     box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
 }
-#hobbys {
+#hobbies {
     grid-column: 3/4;
     grid-row: 1;
     background-color: #00507059;
@@ -207,7 +207,13 @@
         padding: 10px;
     }
 
-    #slide{
+    #slide-skills{
+        display: inline-block;
+        overflow: visible;
+        animation: 25s slide infinite linear;
+    }
+
+    #slide-hobbies{
         display: inline-block;
         overflow: visible;
         animation: 15s slide infinite linear;
@@ -257,7 +263,7 @@
         padding: 25px 7%;
         font-size: 16pt;
     }
-    #hobbys {
+    #hobbies {
         grid-column: 1;
         grid-row: 4;
         padding-left: 2.5dvw;
