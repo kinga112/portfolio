@@ -22,7 +22,6 @@ function Project1(){
           </h3>
           <div id='project1-text'>
             Built with python, read more here:
-            {/* <Glitch ></Glitch> */}
             <a href='https://medium.com/p/9d931e5017e5'>
                 <img id='medium-logo' src={medium}></img>
             </a>
