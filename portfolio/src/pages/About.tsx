@@ -77,9 +77,8 @@ function About() {
               high-energy research-oriented city
               <br/>
               <br/>
-              Those good times quickly ended after Covid struck where I finished my last semester at home. I was
-              able to reconnect with highschool friends to keep my mind stable. Then not too long after I was able
-              to land my first full time position as a Software Developer.
+              The challenges of the past few years have solidified my motivation as a software developer.
+              I opportunies to work remotly and experience the world have paved a path for my journey.
             </span>
           </div>
           <div id="skills">
@@ -181,9 +180,11 @@ function About() {
             </div>
             }
           </div>
+          {size.width < 1200 &&
           <div id="timeline">
             <Timeline/>
           </div>
+          }
           <div id="mission">
             <div id='mission-grid'>
               <div id='mission-text'>
