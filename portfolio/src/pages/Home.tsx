@@ -44,16 +44,38 @@ function Home() {
       <div id='middle-info'>
         <div id='middle-info-text'>
           Hello!
-          <br></br>
-          This portfolio is a testament to my journey — 
-          <br></br>
-          a canvas where the tracks of my skiing adventures converge with the 
-          lines of code that define my craftsmanship. 
-          <br></br>
-          Join me on this odyssey of creation, where every project is a peak conquered, 
-          and every line of code is a story waiting to be told. 
-          <br></br>
-          Welcome to a world where software development meets the art of exploration.
+          <br/>
+          <br/>
+          Welcome to my journey,
+          <br/>
+          where the tracks of my 
+          <br/>
+          skiing adventures converge
+          <br/>
+          with the lines of code 
+          <br/>
+          that define my craftsmanship.
+          <br/>
+          Join me on this
+          <br/>
+          odyssey of creation, 
+          <br/>
+          where every project is a 
+          <br/>
+          peak conquered, 
+          <br/>
+          and every line of code 
+          <br/>
+          is a story 
+          <br/>
+          waiting to be told. 
+          <br/>
+          <br/>
+          Welcome to my world where 
+          <br/>
+          software development 
+          <br/>
+          meets the art of exploration.
         </div>
         
       </div>

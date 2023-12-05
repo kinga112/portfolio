@@ -65,20 +65,21 @@ function About() {
             to land my first full time position as a Software Developer. After 3 years I was layed off, where I have
             now start a new journey to find something fresh!">
             <span>
-              My story begins 25 years ago. A creative boy who loves to build legos and play in the dirt.
-              I love the fresh salty air by the beach and the brisk chills of the north. My curious mind 
-              taught me to explore, and think critically.
+              My story begins as a creative boy building legos and playing in the dirt.
+              I love the fresh salty air by the beach and the brisk chills of the mountains. My curious mind 
+              taught me to explore and think critically.
               <br/>
               <br/>
-              My love of Boston brought me to Wentworth Institute of Techology, where I received my Bachelors
-              in Computer Science. The next four years in the Fenway area were thrilling and solidified all my
-              thoughts of the beautiful city!
+              My love for Boston brought me to Wentworth Institute of Techology, where I received my Bachelors
+              in Computer Science. The next four years living near Fenway solidified my appreciation for 
+              this 
+              <br/>
+              high-energy research-oriented city
               <br/>
               <br/>
               Those good times quickly ended after Covid struck where I finished my last semester at home. I was
               able to reconnect with highschool friends to keep my mind stable. Then not too long after I was able
-              to land my first full time position as a Software Developer. After 3 years I was laid off, where I have
-              now start a new journey to find something fresh!
+              to land my first full time position as a Software Developer.
             </span>
           </div>
           <div id="skills">
