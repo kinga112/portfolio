@@ -192,15 +192,13 @@ function About() {
                       {size.width <= 1200 && 
                       <span>
                         Making an impact 
-                        {size.width <= 1200 &&<br/>}
-                        around the world
+                        {size.width < 800 && <br/>}
+                        &nbsp;around the world
                       </span>
                       }
                       {size.width > 1200 && 
                       <span>
-                        Making an impact
-                        <br/>
-                        around the world
+                        Making an impact around the world
                       </span>
                       }
                     </Link>
