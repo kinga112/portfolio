@@ -85,7 +85,7 @@
   }
 
   @media only screen and (max-device-width: 480px) {
-    #project2{
+    #project4{
       grid-column: 1;
       grid-row: 4;
     }
