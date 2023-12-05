@@ -221,25 +221,12 @@
 
     #grid-wrapper{
         display: grid;
-        /* grid-template-columns: 85vw; */
-        /* justify-content: center; */
-        /* grid-template-columns: fit-content(300px) fit-content(300px) 1fr; */
         gap: 10px;
-        /* padding: 25px; */
-        /* grid-auto-rows: minmax(200px, 200px); */
-        /* margin: 0px 25px; */
-        /* background-color: black; */
     }
     #skills {
         grid-column: 1;
         grid-row: 1;
-        /* white-space: wrap; */
-        /* height: 100px; */
         overflow: hidden;
-        /* background-color: #00507059; */
-        /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.041); */
-        /* border-radius: 15px;    */
-        /* white-space-collapse: collapse; */
     }
     #projects {
         grid-column: 1;
@@ -248,9 +235,6 @@
         box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
         width: 80dvw;
-        /* width: 40dvw; */
-        /* height: auto; */
-        /* white-space: nowrap; */
     }
     #my-story {
         grid-column: 1;
@@ -258,8 +242,6 @@
         background-color: #00507059;
         box-shadow: 0 2px 30px rgba(0, 0, 0, 0.25);
         border-radius: 15px;
-        /* background-color: black; */
-        /* text-align: center; */
         padding: 25px 7%;
         font-size: 16pt;
     }
@@ -293,5 +275,5 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-
+    
 }
