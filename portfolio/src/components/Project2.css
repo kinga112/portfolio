@@ -76,5 +76,6 @@ a {
   #project2{
     grid-column: 1;
     grid-row: 2;
+    width: 90%;
   }
 }

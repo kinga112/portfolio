@@ -58,3 +58,9 @@ h3{
   width: auto;
   margin-top: 10px;
 }
+
+@media only screen and (max-device-width: 480px) {
+  #project1{
+    width: 90%;
+  }
+}

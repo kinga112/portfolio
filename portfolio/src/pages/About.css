@@ -275,5 +275,8 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-    
+    #projects-grid{
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(auto, auto);
+    }
 }
