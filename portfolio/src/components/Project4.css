@@ -83,3 +83,10 @@
       font-size: 1.75dvw;
     }
   }
+
+  @media only screen and (max-device-width: 480px) {
+    #project2{
+      grid-column: 1;
+      grid-row: 4;
+    }
+  }
