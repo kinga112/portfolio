@@ -78,7 +78,7 @@ function About() {
               <br/>
               <br/>
               The challenges of the past few years have solidified my motivation as a software developer.
-              I opportunies to work remotly and experience the world have paved a path for my journey.
+              The opportunies to work remotly and experience the world have paved the path for my journey.
             </span>
           </div>
           <div id="skills">
