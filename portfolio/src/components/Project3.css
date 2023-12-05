@@ -80,5 +80,6 @@
       grid-column: 1;
       grid-row: 3;
       width: 90%;
+      height: 250px;
     }
   }
